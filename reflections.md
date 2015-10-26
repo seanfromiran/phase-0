@@ -34,4 +34,10 @@ rm: remove file
 
 help: opens help manual
 
-###
+### To create a new repository, a user needs to log onto their account and click on the plus sign in the top right corner, then click new repository. The user then needs to enter a name for their repo under "Repository name," determine whether they want it public or private, check other boxes that fit their needs, and finally click "Create Repository" to finish the process.
+
+To fork a repository, a user clicks on the fork button on the top right of an existing repository page and duplicates it onto a page of their choosing.
+
+To clone a repository, copy the "HTTPS clone URL" on the right side of a repository page. Then, in the command line, type "git clone (pasted HTTPS clone URL)". Check that the files have been cloned using the ls and cd commands.
+
+I struggled with accessing my terminal correctly because I haven't done it in about the week. Using git and GitHub were made easy due to the video provided.
