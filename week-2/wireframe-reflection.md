@@ -1,6 +1,6 @@
-![Alt text](week-2/imgs/home-wireframe.png "Home Page Wireframe")
+![Alt text](imgs/home-wireframe.png "Home Page Wireframe")
 
-![Alt text](week-2/imgs/blog-wireframe.png "Blog Page Wireframe")
+![Alt text](imgs/blog-wireframe.png "Blog Page Wireframe")
 
 What is a wireframe?
 
