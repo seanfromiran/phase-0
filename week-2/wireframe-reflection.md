@@ -1,10 +1,10 @@
-![Alt text](imgs/home-wireframe.png "Home Page Wireframe")
+![Alt text](week-2/imgs/home-wireframe.png "Home Page Wireframe")
 
-![Alt text](imgs/blog-wireframe.png "Home Page Wireframe")
+![Alt text](week-2/imgs/blog-wireframe.png "Blog Page Wireframe")
 
 What is a wireframe?
 
-A wireframe acts like the foundation level for your websites layout. 
+A wireframe acts like the foundation level for your websites layout.
 
 What are the benefits of wireframing?
 
