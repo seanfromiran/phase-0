@@ -1,1 +1,0 @@
-![Alt text](imgs/site-map.png "My Site Map")
