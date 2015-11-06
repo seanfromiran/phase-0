@@ -1,0 +1,64 @@
+html {
+  color: #000080;
+  background-color: #ffffff;
+  
+}
+
+a:link {
+  color: purple;
+}
+
+a:visited {
+  color: red;
+}
+
+#first {
+    float: left;
+    width: 40%;
+    margin: 0 1.5%;
+}
+
+#second {
+    float: right;
+    width: 40%;
+    margin: 0 1.5%;
+}
+
+p {
+    font-size: 10px;
+}
+#hh1 {
+    font-size: 12px;
+}
+#hh2 {
+    font-size: 14px;
+}
+#hh3 {
+    font-size: 16px;
+}
+h1 {
+    font-weight: bold;
+    width:30%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+    margin-top: -150px;
+    height: 150px;
+    position: relative;
+    clear: both;
+}
+
+#firstp {
+    width:40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#linebreak {
+    border: 0;
+    height: 1px;
+    color: black;
+}
+}
