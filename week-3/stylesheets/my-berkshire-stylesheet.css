@@ -61,4 +61,28 @@ footer {
     height: 1px;
     color: black;
 }
-}
+
+/*
+
+
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+From what we have seen so far, we are concerned with the "rel", "type", and "href" of a stylesheet. "href", gives the url of the stylesheet. "rel" defines the relationship between our html file and the specified url. Lastly, "type" gives us the media type of the specified url.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+Our positioning was done using the "margin", "float", and "width" tags. With some combination of these three, we are able to get our copy of the Berkshire site pretty close to accurate. It was really hard to get the site as we wanted. Actually, after spending two hours on this pair programming assignment, we hung up our hats because we weren't really making any progress and we had gone way past the recommended time. This was kind of discouraging, but we were happy with the effort we had put into the assignment.
+
+What CSS did you use to modify the element style (like size, color, etc.)?
+
+We used the tools "color", "font-weight", and "font-size" to modify the element style. On top of this, we used a variety of ids in order to tweak our html on a case by case basis.
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+Yes, we did use ids, and this tool is important when we want to define attributes for an element that only occurs once in our html. We did not use classes, but these are used when we have a number of elements that need a certain set of attributes.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+Well, we didn't get our site to exactly match the Berkshire-Hathaway one, but our code definitely had better practices because we used semantic HTML as well as CSS. The Berkshire site is rather outdated and it only used HTML to code up the site.
+
+*/
