@@ -17,3 +17,30 @@ puts 365.25*24
 #Minutes in a decade
 puts 365.25*10*24*60
 ```
+How does Ruby handle addition, subtraction, multiplication, and division of numbers?
+
+Ruby handles these operators depending on the data type. Integer addition returns integers, and so on, the only curiosity comes up with integer division, which will round down the division of integers to the nearest integer (i.e. 7/2=3). The other data type we are concerned about is float, here, we end up with a float after performing float addition, subtraction, etc (7/2=3.5.
+
+What is the difference between integers and floats?
+
+An integer contains no information in the decimal places. Conversely, floats always have information in the decimal place(s).
+
+What is the difference between integer and float division?
+
+I outline this difference in the first question.
+
+What are strings? Why and when would you use them?
+
+Strings are a sequence of characters. We use strings when we want to display or store a sequence of characters. Strings give us the ability to hold onto any reasonable sequence of characters that we wish!
+
+What are local variables? Why and when would you use them?
+
+A local variable points to something which is stored in local memory. We use local variables when we want to refer to something by an identifier and not explicitly. This process can save time and energy!
+
+How was this challenge? Did you get a good review of some of the basics?
+
+This challenge was pretty easy, but it did give me a good review of the basics.
+
+[Defining Variables](https://github.com/seanfromiran/phase-0/blob/master/week-4/defining-variables.rb)
+[Simple String](hhttps://github.com/seanfromiran/phase-0/blob/master/week-4/simple-string.rb)
+[Basic Math](https://github.com/seanfromiran/phase-0/blob/master/week-4/basic-math.rb)
