@@ -42,5 +42,5 @@ How was this challenge? Did you get a good review of some of the basics?
 This challenge was pretty easy, but it did give me a good review of the basics.
 
 [Defining Variables](https://github.com/seanfromiran/phase-0/blob/master/week-4/defining-variables.rb)
-[Simple String](hhttps://github.com/seanfromiran/phase-0/blob/master/week-4/simple-string.rb)
+[Simple String](https://github.com/seanfromiran/phase-0/blob/master/week-4/simple-string.rb)
 [Basic Math](https://github.com/seanfromiran/phase-0/blob/master/week-4/basic-math.rb)
