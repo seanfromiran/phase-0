@@ -1,6 +1,6 @@
 # Calculate a Grade
 
-# I worked on this challenge [by myself, with: ].
+I worked on this challenge with Jonathan Huang
 
 
 # Your Solution Below
