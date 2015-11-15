@@ -9,12 +9,12 @@
 # 0. total Pseudocode
 # make sure all pseudocode is commented out!
 
-# Input: An array of numbers
+# Input: An array of numbers.
 # Output: The sum of all of the numers in the given array.
 # Steps to solve the problem.
 # - Pass the method an argument.
 # - Iterates over each item in the array and adds it to our running total.
-# it returns all array items added together
+# - Returns sum of array.
 # 1. total initial solution
 def total(array)
 sum = 0
@@ -31,13 +31,14 @@ end
 
 # 4. sentence_maker pseudocode
 # make sure all pseudocode is commented out!
-# Input: array of strings
-# Output: a grammatically correct sentence
-# Steps to solve the problem.
-# initialize an empty string
-# add every element of the array to the empty string with a space
-# return the sentence with a capitalized first letter and removing the last space
-# add a period to the end of the sentence
+# Input: An array of strings.
+# Output: A grammatically correct sentence.
+# Steps to solve the problem:
+# - Pass an array of strings to the method.
+# - Initialize an empty string.
+# - Add every element of the array to the empty string with a space after
+# - Return the sentence ("sum of strings") with a capitalized first letter and 
+#   removing the last space, followed by a period.
 
  # 5. sentence_maker initial solution
  def sentence_maker(string)
