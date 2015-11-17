@@ -99,26 +99,32 @@ print_list(our_hash)
 
     What did you learn about pseudocode from working on this challenge?
 
-		
+		Pseudocode is a great starting point for coding because it makes me think about the entire problem at hand. Once I have outlined what I need to do to bring the challenge to completion, it becomes a lot easier.
 
     What are the tradeoffs of using Arrays and Hashes for this challenge?
 
-
+		Arrays could be used for this project, but they lack the defauly key/value relationship of hashes. I feel like it would quickly become confusing to keep track of indicies and such with arrays. Hashes are also nice because our information is easily accessible by keywords and clear names.
 
     What does a method return?
 
-
+		A method can return explicitly if we use a return statement somewhere in out method. For example:
+=end
+	def method(int)
+		return int*2
+	end
+=begin
+		If no return statement is present, then the method will return the value of the last statement.
 
     What kind of things can you pass into methods as arguments?
 
-
+		Methods accept all objects as arguments.
 
     How can you pass information between methods?
 
-
+		When we call a method from within another method, the method which makes the call can pass information to the other method.
 
     What concepts were solidified in this challenge, and what concepts are still confusing?
 
-
+		The concepts of hashes and iteration were really made clear this challenge. I feel confident about everything presented in this challenge.
 
 =end
