@@ -17,6 +17,10 @@ def create_list(string)
 	end
 	return list
 end
+
+
+#puts create_list("")
+
 =begin
 puts create_list("carrots apples cereal pizza")
 =end
@@ -34,6 +38,18 @@ def add_item(list, string, integer=1)
 	return list
 end
 
+our_hash = create_list("")
+
+
+add_item(our_hash, "lemonade", 2)
+add_item(our_hash, "tomatoes", 3)
+add_item(our_hash, "onions", 1)
+add_item(our_hash, "ice cream", 4)
+
+=begin
+puts our_hash
+=end
+
 # puts add_item(create_list("carrots apples cereal pizza"), "potato", 3)
 
 # Method to remove an item from the list
@@ -45,6 +61,9 @@ def remove_item(list, string)
 	list.delete(string)
 	return list
 end
+
+remove_item(our_hash, "lemonade")
+
 
 # puts remove_item(create_list("carrots apples cereal pizza"), "carrots")
 
@@ -58,6 +77,8 @@ def update_quantity(list, string, integer)
 	return list
 end
 
+update_quantity(our_hash, "ice cream", 1)
+
 # puts update_quantity(create_list("carrots apples cereal pizza"), "carrots", 3)
 # Method to print a list and make it look pretty
 # input: Our hash
@@ -70,4 +91,34 @@ def print_list(list)
 	end
 end
 
-print_list(create_list("carrots apples cereal pizza"))
+print_list(our_hash)
+
+#print_list(create_list("carrots apples cereal pizza"))
+
+=begin
+
+    What did you learn about pseudocode from working on this challenge?
+
+		
+
+    What are the tradeoffs of using Arrays and Hashes for this challenge?
+
+
+
+    What does a method return?
+
+
+
+    What kind of things can you pass into methods as arguments?
+
+
+
+    How can you pass information between methods?
+
+
+
+    What concepts were solidified in this challenge, and what concepts are still confusing?
+
+
+
+=end
