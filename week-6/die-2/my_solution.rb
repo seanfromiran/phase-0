@@ -1,14 +1,14 @@
 # Die Class 2: Arbitrary Symbols
 
 
-# I worked on this challenge [by myself, with: ].
-# I spent [#] hours on this challenge.
+# I worked on this challenge by myself.
+# I spent 1.5 hours on this challenge.
 
 # Pseudocode
 
-# Input:
-# Output:
-# Steps:
+# Input: An array of strings is needed for the initialize method. For the sides and roll methods, we need an instance of the Die class.
+# Output: Initialize and sides will return the number of sides of our die. Roll will return a random side from our die.
+# Steps: Both sides and roll seem like they will be very straightforward to implement. For initialize, we need to raise an error if we are passed an empty array. Then, the array which we pass to the method will now be duplicated into the array specific to this instance. 
 
 
 # Initial Solution
@@ -44,8 +44,8 @@ class Die
     if labels.length < 1
       raise ArgumentError.new("Your number is too small")
     else
-      @labels = []
-      labels.each { |i| @labels.push(i) }
+      #Just use the .dup method
+      @labels = labels.dup
       return @labels.length
     end
   end
@@ -65,7 +65,7 @@ end
 =begin
 What does this exercise teach you about making code that is easily changeable or modifiable?
 
-This exercise teaches me that 
+This exercise teaches me that once we have a basic format, it is really easy to build onto old code and incorporate new ideas.
 
 What new methods did you learn when working on this challenge, if any?
 
