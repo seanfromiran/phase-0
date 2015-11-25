@@ -62,6 +62,9 @@
     Should you always use an accessor to cover your bases? Why or why not?
     What is confusing to you about these methods?
 
-    
+    It seems like it is always a good idea to use an accessor on class 
+    variables because it makes us think about how we are going to use them. We 
+    should always think about if we want to maintain privacy. These methods 
+    are pretty straightforward.
 
 =end
