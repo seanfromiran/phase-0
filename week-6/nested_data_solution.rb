@@ -51,6 +51,7 @@ number_array.each do |element|
   end
 end
 
+#Refactored
 p number_array.map! {|element|
   
   element.kind_of?(Array) ? element.map! {|inner| inner += 5} : element += 5}
@@ -79,7 +80,34 @@ startup_names.each do |element|
   end
 end
 
+#Refactored
 p startup_names.map! { |element| element.kind_of?(Array) ? element.map!                 {|inner_element| inner_element.kind_of?(Array) ? inner_element.map! {|inner_inner|  inner_inner.concat("ly")} 
   : inner_element.concat("ly")} : element.concat("ly")}
 
 p opt_array
+
+# Reflection
+
+=begin
+    What are some general rules you can apply to nested arrays?
+
+    After doing this exercise, I realized that it is usually easier to start 
+    from the inside and move out when we try to access inner elements of 
+    nested arrays. Also, nested if/else statements are pretty essential to 
+    correctly iterating over nested arrays. 
+
+    What are some ways you can iterate over nested arrays?
+
+    We used the enumerable methods each and map in conjunction with if/else 
+    statements to iterate over nexted arrays. Our refactored solution used the 
+    ternary operator to eliminate if/else statements
+
+    Did you find any good new methods to implement or did you re-use one you 
+    were already familiar with? What was it and why did you decide that was a 
+    good option?
+
+    We used the ternary operator to help refactor our code and reduce it to a 
+    more elegant solution. We were already familiar with this method, but the 
+    solution it produced was too good to pass up.
+
+=end
