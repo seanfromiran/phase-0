@@ -2,7 +2,7 @@
 # 1) Sean Massih
 # 2) N/A
 
-# We spent [#] hours on this challenge.
+# We spent 1.5 hours on this challenge.
 
 # Bakery Serving Size portion calculator.
 
