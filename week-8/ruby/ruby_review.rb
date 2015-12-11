@@ -43,6 +43,8 @@ end
 def is_fibonacci?(num)
 	egg_1 = (5*num**2+4)
 	egg_2 = (5*num**2-4)
+	# sqrt method always returns integers, so we need to check the sqrt for one  
+	# value smaller to see if the same integer is returned.
 	((sqrt(egg_1)!=sqrt(egg_1-1)) || (sqrt(egg_2)!=sqrt(egg_2-1))) ? true : false
 end
 
