@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
-// This challenge took me [#] hours.
+// I worked on this challenge with Monique 
+// This challenge took us 4 hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -41,6 +41,7 @@ var voteCount = {
   treasurer: {}
 }
 
+
 /* The name of each student receiving a vote for an office should become a property
 of the respective office in voteCount.  After Alex's votes have been tallied,
 voteCount would be ...
@@ -78,77 +79,47 @@ var officers = {
 // __________________________________________
 // Initial Solution
 
-// for (var key in validation_messages) {
-//    if (validation_messages.hasOwnProperty(key)) {
-//        var obj = validation_messages[key];
-//         for (var prop in obj) {
-//           // important check that this is objects own property 
-//           // not from prototype prop inherited
-//           if(obj.hasOwnProperty(prop)){
-//             alert(prop + " = " + obj[prop]);
-//           }
-//        }
-//     }
-// }
-
 // for (var key in votes) {
 //   if(votes.hasOwnProperty(key)) {
 //     var val = votes[key];
-//     for (var prop in val) {
-//       if(val.hasOwnProperty(prop)){
-//         alert(prop + "=" + val[prop]);
-//       }
-//     }
-//   }
-// }
-
-for (var key in votes) {
-  if(votes.hasOwnProperty(key)) {
-    var val = votes[key];
-    //console.log(val);
-    for (var prop in val) {
-      var valOfVal = val[prop];  
-      // console.log(prop);
-     //  console.log(voteCount);
-       console.log(voteCount[prop]);
-      if (voteCount[prop].hasOwnProperty(valOfVal)) {
-        //alert(count_key
-        voteCount[prop][valOfVal] += 1;
-      }
-      else {
-        voteCount[prop][valOfVal] = 1;
-        //console.log(voteCount);
-      }//console.log(voteCount);
-    }
-  }
-}
-
-// for (var key in votes) {
-//   if(votes.hasOwnProperty(key)) {
-//     var val = votes[key];
+//     //console.log(val);
 //     for (var prop in val) {
 //       var valOfVal = val[prop];  
-//       //console.log(valOfVal);
-//       for (var count_key in voteCount) {
-//         var position = prop; 
-//         var props = voteCount[count_key];
-//         //console.log(prop);
-//         // if (props.hasOwnProperty(count_key)) {
-//         //   alert(count_key + " = " + voteCount[count_key]);
-//         // }
-//         console.log(props.position);
-//         if (props.prop != undefined){
-//             props.valOfVal += 1;
-//         }
-//         else {
-//           props = valOfVal;
-          
-//           //console.log(voteCount);
-//         }//console.log(voteCount);
+//       // console.log(prop);
+//      //  console.log(voteCount);;
+//       // console.log(voteCount[prop]);
+//       if (voteCount[prop].hasOwnProperty(valOfVal)) {
+//         //alert(count_key
+//         voteCount[prop][valOfVal] += 1;
+//       }
+//       //console.log(voteCount[prop][valOfVal]);}
+//       else {
+//         voteCount[prop][valOfVal] = 1;     
+//       }      
+
 //       }
 //     }
 //   }
-// }
+
+// for(var prop in officers){
+//   var officePosition = voteCount[prop];
+//   var maxint = 0;
+
+//   for(var winner in officePosition){
+// //     console.log(prop)
+// //     console.log(winner)
+//     var count = officePosition[winner];
+// //     console.log(count)
+
+//     if (count > maxint){
+//       officers[prop] = winner;
+//       maxint = count;
+//     }
+//   }
+//  }
+
+
+
 
 
 
@@ -157,7 +128,36 @@ for (var key in votes) {
 // __________________________________________
 // Refactored Solution
 
+//For the refactor I set up better variable names and just made it more readable. 
+for (var voters in votes) {
+  if(votes.hasOwnProperty(voters)) {
+    var voterSelection = votes[voters];
+ 
+    for (var officeTitle in voterSelection) {
+      var valOfVS = voterSelection[officeTitle]; 
+      if (voteCount[officeTitle].hasOwnProperty(valOfVS)) {
+        voteCount[officeTitle][valOfVS] += 1;
+      }
+      else {
+        voteCount[officeTitle][valOfVS] = 1;     
+      }      
+    }
+  }
+}
 
+
+for(var officeTitle in officers){ 
+  var officePosition = voteCount[officeTitle];
+  var maxint = 0;
+
+  for(var winner in officePosition){
+    var count = officePosition[winner];
+    if (count > maxint){
+      officers[officeTitle] = winner;
+      maxint = count;
+    }
+  }
+}
 
 
 
@@ -165,6 +165,30 @@ for (var key in votes) {
 // __________________________________________
 // Reflection
 
+/*
+    What did you learn about iterating over nested objects in JavaScript?
+
+    We had a lot of trouble iterating over nested objects in JavaScript, and 
+    I think this was due to less overall exposure to JS compared to Ruby. The 
+    work in this challenge was worth it though, accessing and modifying the
+    properties/objects of nested objects.
+
+    Were you able to find useful methods to help you with this?
+
+    The methods that we used were the "for in" iterator and .hasOwnProperty. 
+    The iterator was crucial for accessing nested elements, while 
+    .hasOwnProperty was great for checking to see what properties were already 
+    in our object.
+
+    What concepts were solidified in the process of working through this 
+    challenge?
+
+    This challenge had a pretty direct goal: access and modify nested objects.
+    We spent a lot of time looking over documentation to figure out what to do.
+    So I think I can speak for both of us when I say that we are now really 
+    familiar with the concepts presented. 
+
+*/
 
 
 
