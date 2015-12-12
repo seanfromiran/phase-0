@@ -73,16 +73,23 @@ console.log(average(scores[0]));
 /*
     What did you learn about adding functions to objects?
 
-
+    Adding a function to an object as we did on lines 34 and 38 adds a function
+    property to the object. It's cool because it's really similar to adding a 
+    general property to a function. 
 
     How did you iterate over nested arrays in JavaScript?
 
-
+    The "for in" iterator is a great method for accessing and modifying 
+    elements of nested arrays. This iterator is really similar to "each" 
+    iteration in Ruby, so it was easy to get a grasp of how it works.
 
     Were there any new methods you were able to incorporate? If so, what were 
     they and how did they work?
 
-
+    Yes, we refactored the average function and in the process we introdcued 
+    the reduce method to get the sum of our array in a more elegant fashion.
+    This method allows us to iterate through an array and perform operations 
+    on its elements however we want.
 
 */
 
